@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../Files/font-awesome.min.css">
     <link rel="stylesheet" href="../Files/bootstrap-social.css">
     <link href="../Files/styles.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>pro1</title>
 </head>
 <body>
@@ -31,7 +32,27 @@
     </div>
     <div class = "container">
         <h1>Welcome to BMI calculator</h1>
-       <p><a href="/index.html">imtiyazah907@gmail.com</a></p>
+
+        <div  class="offset-md-2 col-md-10"> 
+        <p>Enter your height: <input type="text" id="height"/>
+            <select type="multiple" id="heightunits">
+                <option value="metres" selected="selected">metres</option>
+                <option value="centimeters" selected="selected">centimeters</option>
+                <option value="inches">inches</option>
+            </select>
+             </p>
+        <p>Enter your weight: <input type="text" id="weight"/>
+            <select type="multiple" id="weightunits">
+                <option value="kg" selected="selected">kilograms</option>
+                <option value="lb">pounds</option>
+            </select>
+        </p>
+        <input type="submit" value="computeBMI" onclick="computeBMI();">
+        <h3  class="offset-md-2">Your BMI is: <span id="output"></span></h3>
+        <h3>According to your BMI you are: <span id="comment"> </span> </h3> 
+        </div>
+    
+        <p class="text-center">Note: Healthy BMI value ranges between 19 and 25 </p>
     </div>
     <footer class="footer">
         <div class = "container">

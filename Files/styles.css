@@ -16,6 +16,11 @@ h1{
 h2{
   color: darkblue;
 }
+}
+h3{
+  color: darkblue;
+  font-size: 18;
+}
 p{
  text-align: justify;
 }
