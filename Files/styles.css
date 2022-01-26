@@ -16,6 +16,10 @@ h1{
 h2{
   color: darkblue;
 }
+p{
+ text-align: justify;
+}
+
 
 
 .footer{
